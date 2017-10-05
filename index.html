@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>PokeWorld Station</title> 
+     <meta name="description" content="">
+    <!--linking css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--linking bootstrap cdn-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!--linking ajax library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.js" charset="utf-8"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+
+     <!--linking firebase-->
+    <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+    <!--media query-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <!--header logo-->
+    <div class="container" id="main-container">
+        <div class="jumbotron" id="head">
+            <h1><img height="60" width="60" src="assets/images/pokeball.png" class="pokeball">PokéWorld<img height="60" width="60" src="assets/images/pokeball.png" class="pokeball"></h1>
+            <div class="box">Hi welcome to Pokéstation time schedule.<i></i></div>
+        </div>
+    </div>
+
+    <!--time schedule panel / bootstrap panel-->
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading panel-custom">
+                <b>Current Pokétrain Schedule:</b>
+            </div>
+
+            <table class="table table-hover">
+                <tr>
+                    <th scope="col"> Pokétrain Available 
+                    </th>
+                    <th scope="col">
+                    Destination City
+                    </th>
+                    <th scope="col">
+                    Frequency (min)
+                    </th>   
+                    <th scope="col">
+                    Minutes Away   
+                    </th> 
+                    <th scope="col">  
+                    Next Arrival  
+                    </th>
+                </tr>
+                <tbody id="table-data">
+                </tbody>
+            </table>
+             <hr />
+        </div>
+
+    <!--adding new train panel-->
+    <div class="panel panel-default">
+        <div class="panel-heading panel-custom"> add your Pokétrain: </div>
+        <div class="panel-body">
+            
+        <form>
+            <div class="form-group">
+                <label for="trainName">Pokétrain: </label>
+                <input type="text" class="form-control" placeholder="ex) Pikachu Express 629" id="train-name" required="">
+            </div>
+            <div class="form-group">
+                <label for="destination">Destination: </label>
+                <input type="text" class="form-control" placeholder="ex) Pallet City" id="train-destination" required="">
+            </div>
+            <div class="form-group">
+                <label for="startYear">First Train: </label>
+                <input type="text" class="form-control" placeholder="HH:MM" id="train-time" required="">
+            </div>
+            <div class="form-group">
+                <label for="endYear">Frequency: </label>
+                <input type="text" class="form-control" placeholder="in minutes" id="time-freq" required="">
+            </div>
+
+            <div class="btn-group" role="group">
+                <button type="button" id="add-btn" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span> Submit</button>
+            </div>
+        </form>
+    </div>
+
+</div>
+</div> 
+
+<footer>
+      <div id="footer" class="container">
+            <h4 class="box" id="copyright">&copy; Copyright 2017 Terry.Javascript</h4>
+      </div>
+</footer>
+
+<!--link javascript-->
+  <script src="assets/javascript/javascript.js"></script>
+
+</body>
+
+</html>
+
+
+
+
