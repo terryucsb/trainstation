@@ -1,0 +1,100 @@
+
+
+/* copied from @font-face kit by Fonts2u (http://www.fonts2u.com) */
+@font-face {
+  font-family: "Pokemon GB";
+  src: url("https://dl.dropboxusercontent.com/u/10822923/Pokemon_GB/Pokemon_GB.eot?") format("eot"),
+       url("https://dl.dropboxusercontent.com/u/10822923/Pokemon_GB/Pokemon_GB.woff") format("woff"),
+       url("https://dl.dropboxusercontent.com/u/10822923/Pokemon_GB/Pokemon_GB.ttf") format("truetype"),
+       url("https://dl.dropboxusercontent.com/u/10822923/Pokemon_GB/Pokemon_GB.svg#PokemonGB") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.box {
+  font-size: 8px;
+  font-family: "Pokemon GB", Arial, sans-serif;
+  border-radius: 2px;
+  padding: 8px;
+  width: 250px;
+  height: 28px;
+  line-height: 16px;
+  margin: auto;
+  background: white;
+  border: 1px solid white;
+  box-shadow: 0 1px 0 1px black,
+              inset 0 1px 0 1px black,
+              0 0 0 1px black,
+              inset 0 0 0 1px black;
+}
+.box > i {
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: black;
+  margin-top: 23px;
+  animation: bounce 0.5s ease-in-out 0 infinite alternate;
+  float: right;
+}
+
+@keyframes bounce {
+  from { margin-top: 20px; }
+  to { margin-top: 23px; }
+}
+
+/* main css */
+
+#head {
+	text-align: center;
+	background-color: white;
+	color:black;
+	padding: 20px;
+}
+
+.panel-custom{
+	color: black !important;
+	background-color: white !important;
+}
+
+.panel-heading{
+	font-size: 120%;
+	font-family: sans-serif;
+}
+
+
+table{
+	margin: 0 auto;
+}
+
+th {
+	width: 10px;
+	margin: 10px 10px 0px 10px;
+	padding: 30px 30px 0px 30px;
+}
+
+footer {
+	text-align: center;
+}
+
+hr {
+	margin: 10px;
+}
+
+
+td{
+	width: 10px;
+	margin: 10px 10px 0px 10px;
+	padding: 30px 30px 0px 30px;
+
+}
+
+h1 img {
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+
+
